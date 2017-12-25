@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Brandon Grotesque';    
+    src: url("./assets/fonts/Brandon_reg.otf") format("opentype");
+}
+body{
+    font-family: 'Brandon Grotesque';
+}
