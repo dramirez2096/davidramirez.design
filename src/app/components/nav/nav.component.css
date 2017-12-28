@@ -6,4 +6,15 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo logo logo links links links links"
+}
+
+.logo-area{
+    border: 1px dashed #fff;
+    grid-area: logo;
+}
+.links-area{
+    border: 1px dashed yellow;
+    grid-area: links;
 }
