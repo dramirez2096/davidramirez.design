@@ -1,7 +1,9 @@
-.wrap{
+.container{
     margin: 0;
     background-color: #1E1E1E;
     text-align: center;
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
