@@ -1,7 +1,6 @@
 .container{
     margin: 0;
     background-color: #1E1E1E;
-    text-align: center;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -11,10 +10,31 @@
 }
 
 .logo-area{
-    border: 1px dashed #fff;
     grid-area: logo;
+    border: 1px dashed #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .links-area{
-    border: 1px dashed yellow;
     grid-area: links;
+    border: 1px dashed yellow;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+.links{
+    list-style: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
