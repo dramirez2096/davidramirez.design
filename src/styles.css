@@ -1,10 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-    font-family: 'Brandon Grotesque';    
-    src: url("./assets/fonts/Brandon_reg.otf") format("opentype");
-}
 body{
     font-family: 'Brandon Grotesque';
     background-color: #0477BD;
     color: #fff;
 }
+.page-title{
+    font-size: 63px;
+    display: inline;
+    font-weight: 700;
+    text-shadow: 5px 5px 1px #045D89;
+}
+
+/*------------------------------------Hamburger Styles-------------------------------------*/
+.c-hamburger {
+    /*background-color: #0477BD;*/
+    background-color: transparent;
+    display: block;
+    position: fixed;
+    /*position: absolute;*/
+    overflow: hidden;
+    width: 65px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .c-hamburger:focus {
+    outline: none;
+  }
+  .c-hamburger span {
+    display: block;
+    position: absolute;
+    left: 5px;
+    right: 30px;
+    height: 3px;
+    background: #fff;
+  }
+  
+  .c-hamburger span::before,
+  .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    content: "";
+  }
+  
+  .c-hamburger span::before {
+    top: -10px;
+  }
+  
+  .c-hamburger span::after {
+    bottom: -10px;
+  }
+  .c-hamburger--htx {
+    background-color: none;
+  }
+  
+  .c-hamburger--htx span {
+    transition: background 0s 0.3s;
+  }
+  
+  .c-hamburger--htx span::before,
+  .c-hamburger--htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+  }
+  
+  .c-hamburger--htx span::before {
+    transition-property: top, transform;
+  }
+  
+  .c-hamburger--htx span::after {
+    transition-property: bottom, transform;
+  }
+  
+  /* active state, i.e. menu open */
+  .c-hamburger--htx.is-active span {
+    background: none;
+  }
+  
+  .c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  .c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .c-hamburger--htx.is-active span::before,
+  .c-hamburger--htx.is-active span::after {
+    transition-delay: 0s, 0.3s
+  }
