@@ -11,7 +11,7 @@
 
 .logo-area{
     grid-area: logo;
-    border: 1px dashed #fff;
+    /* border: 1px dashed #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
 }
 .links-area{
     grid-area: links;
-    border: 1px dashed yellow;
+    /* border: 1px dashed yellow; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -29,8 +29,15 @@
     width: 250px;
     height: 250px;
 }
+.name{
+    font-size: 40pt;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .links{
     list-style: none;
+    font-size: 35pt;
+    font-weight: 100;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
