@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NavComponent } from './../nav/nav.component';
+import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
+
+declare var $: any;
 
 @Component({
   selector: 'app-hamburger',
@@ -10,6 +14,7 @@ export class HamburgerComponent implements OnInit{
     constructor(){}
   
     ngOnInit(){
+      // -------------------------- Hamburger Animation Scripts -------------------------------------
         (function() {
 
             "use strict";
@@ -29,5 +34,11 @@ export class HamburgerComponent implements OnInit{
             }
             
             })();
+//------------------------------ Nav Toggle Scripts ---------------------------------
+          //   $("#menu-toggle").click( function (e){
+          //     e.preventDefault();
+          //     $(NavComponent).setAttribute("style", "height: 0vh");
+          // });
     }
+    
 }
