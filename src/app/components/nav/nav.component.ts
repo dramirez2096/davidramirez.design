@@ -7,34 +7,22 @@ import { HamburgerComponent } from '../hamburger/hamburger.component';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+
   @ViewChild('container') nav;
 
   constructor(){}
 
-  ngOnInit(){
-    // -------------------------- Hamburger Animation Scripts -------------------------------------
-    (function() {
+  ngOnInit(){}
 
-      "use strict";
-      
-      var toggles = document.querySelectorAll(".c-hamburger");
-      
-      for (var i = toggles.length - 1; i >= 0; i--) {
-      var toggle = toggles[i];
-      toggleHandler(toggle);
-      };
-      
-      function toggleHandler(toggle) {
-      toggle.addEventListener( "click", function(e) {
-        e.preventDefault();
-        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-      });
+    menuToggle(){
+      let element = this.nav.nativeElement;
+      if (element.style.height = "0vh"){
+        element.setAttribute("style", "height: 100vh")
+        console.log('if works')
+      } 
+      else if (element.style.height = "100vh") {
+        element.setAttribute("style", "height: 0vh")
+        console.log('else works')
       }
-      
-      })();
+    };
   }
-  ngAfterViewInit(){
-    let element = this.nav.nativeElement;
-    element.setAttribute("style", "background-color: salmon");
-  }
-}

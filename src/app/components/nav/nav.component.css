@@ -2,11 +2,12 @@
     margin: 0;
     background-color: #1E1E1E;
     width: 100vw;
-    height: 100vh;
+    height: 0vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "logo logo logo links links links links"
+    "logo logo logo links links links links";
+    transition: height 0.5s ease 0s;
 }
 
 .logo-area{

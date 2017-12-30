@@ -9,19 +9,10 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('container') nav;
 
   constructor(){}
   
   ngOnInit(){
-  //   $("#menu-toggle").click( function (e){
-  //     e.preventDefault();
-  //     $(NavComponent).setAttribute("style", "height: 0vh");
-  //   });
-  // }
-
-  // ngAfterViewInit(){
-  //   let element = this.nav.nativeElement;
-  //   element.setAttribute("style", "background-color:red");
-  // }
+  
+  }
 }
