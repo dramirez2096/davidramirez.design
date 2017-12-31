@@ -9,18 +9,31 @@ import { HamburgerComponent } from '../hamburger/hamburger.component';
 export class NavComponent {
 
   @ViewChild('container') nav;
+  @ViewChild('logoArea') logo;
+  @ViewChild('linksArea') links;
 
   constructor(){}
 
   ngOnInit(){}
 
     menuToggle(){
-      let element = this.nav.nativeElement;
-      if(element.style.height != '100vh'){
-        element.setAttribute("style", "height: 100vh")
+      let background = this.nav.nativeElement;
+      let logoArea = this.logo.nativeElement;
+      let linksArea = this.links.nativeElement;
+
+      if(background.style.height != '100vh'){
+        background.style.height = "100vh"
+        logoArea.style.visibility = "visible"
+        logoArea.style.opacity = "1"
+        linksArea.style.visibility = "visible"
+        linksArea.style.opacity = "1"
       }
       else {
-        element.setAttribute("style", "height: 0vh")
+        background.style.height = "0vh"
+        logoArea.style.visibility = "hidden"
+        logoArea.style.opacity = "0"
+        linksArea.style.visibility = "hidden"
+        linksArea.style.opacity = "0"
       }
       }
     }

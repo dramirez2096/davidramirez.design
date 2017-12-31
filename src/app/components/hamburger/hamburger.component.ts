@@ -34,11 +34,6 @@ export class HamburgerComponent implements OnInit{
             }
             
             })();
-//------------------------------ Nav Toggle Scripts ---------------------------------
-          //   $("#menu-toggle").click( function (e){
-          //     e.preventDefault();
-          //     $(NavComponent).setAttribute("style", "height: 0vh");
-          // });
     }
     
 }

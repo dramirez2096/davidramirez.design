@@ -17,6 +17,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s linear 0.3s;
 }
 .links-area{
     grid-area: links;
@@ -24,7 +27,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s linear 0.3s;
 }
 .logo{
     width: 250px;
