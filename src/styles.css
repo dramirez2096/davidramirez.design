@@ -5,6 +5,14 @@ body{
     color: #fff;
     margin: 0px;
 }
+.container{
+    /* border: 1px dashed red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 163px;
+}
 .page-title{
     font-size: 63px;
     display: inline;
@@ -13,4 +21,18 @@ body{
 }
 h1{
   margin-top: 0px;
+  -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.body-text{
+    font-size: 21px;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
