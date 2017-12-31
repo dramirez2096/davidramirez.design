@@ -1,0 +1,11 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". landing landing landing landing landing ."
+}
+app-landing{
+    grid-area: landing;
+}
