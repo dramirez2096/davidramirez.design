@@ -1,14 +1,13 @@
 .c-hamburger {
-    /*background-color: #0477BD;*/
     background-color: transparent;
     display: block;
     position: fixed;
-    /*position: absolute;*/
     overflow: hidden;
     width: 65px;
     height: 55px;
     border: none;
     cursor: pointer;
+    left: 10px;
   }
   
   .c-hamburger:focus {
@@ -21,6 +20,8 @@
     right: 30px;
     height: 3px;
     background: #fff;
+    border-radius: 5px;
+    transition-delay: 0.1s;
   }
   
   .c-hamburger span::before,
@@ -32,6 +33,7 @@
     height: 3px;
     background-color: #fff;
     content: "";
+    border-radius: 5px;
   }
   
   .c-hamburger span::before {
@@ -41,18 +43,10 @@
   .c-hamburger span::after {
     bottom: -10px;
   }
-  .c-hamburger--htx {
-    background-color: none;
-  }
-  
-  .c-hamburger--htx span {
-    transition: background 0s 0.3s;
-  }
   
   .c-hamburger--htx span::before,
   .c-hamburger--htx span::after {
     transition-duration: 0.3s, 0.3s;
-    transition-delay: 0.3s, 0s;
   }
   
   .c-hamburger--htx span::before {
@@ -70,12 +64,12 @@
   
   .c-hamburger--htx.is-active span::before {
     top: 0;
-    transform: rotate(45deg);
+    transform: rotate(225deg);
   }
   
   .c-hamburger--htx.is-active span::after {
     bottom: 0;
-    transform: rotate(-45deg);
+    transform: rotate(-225deg);
   }
   
   .c-hamburger--htx.is-active span::before,
