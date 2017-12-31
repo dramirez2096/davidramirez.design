@@ -16,13 +16,11 @@ export class NavComponent {
 
     menuToggle(){
       let element = this.nav.nativeElement;
-      if (element.style.height = "0vh"){
+      if(element.style.height != '100vh'){
         element.setAttribute("style", "height: 100vh")
-        console.log('if works')
-      } 
-      else if (element.style.height = "100vh") {
-        element.setAttribute("style", "height: 0vh")
-        console.log('else works')
       }
-    };
-  }
+      else {
+        element.setAttribute("style", "height: 0vh")
+      }
+      }
+    }
