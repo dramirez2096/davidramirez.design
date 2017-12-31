@@ -1,7 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { NavComponent } from './components/nav/nav.component';
-
-declare var $: any;
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',

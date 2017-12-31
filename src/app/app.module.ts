@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HamburgerComponent } from './components/hamburger/hamburger.component';
+import { LandingComponent } from './components/pages/landing/landing.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HamburgerComponent
+    HamburgerComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule
