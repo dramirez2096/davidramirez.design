@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    ". landing landing landing landing landing ."
+    ". landing landing landing landing landing .";
+    min-height: 1000px;
 }
 app-landing{
     grid-area: landing;

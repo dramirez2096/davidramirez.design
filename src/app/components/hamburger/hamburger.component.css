@@ -8,6 +8,7 @@
     border: none;
     cursor: pointer;
     left: 10px;
+    z-index: 1;
   }
   
   .c-hamburger:focus {
