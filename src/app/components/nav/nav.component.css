@@ -1,8 +1,9 @@
-.container{
+.grid-container{
     margin: 0;
     background-color: #1E1E1E;
     width: 100vw;
     height: 0vh;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
