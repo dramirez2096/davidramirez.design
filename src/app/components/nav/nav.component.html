@@ -1,4 +1,6 @@
-<app-hamburger (click)='menuToggle()'></app-hamburger>
+<button id ="menu-toggle" class="c-hamburger c-hamburger--htx" #hamburger (click)='menuToggle()'>
+    <span></span>
+</button>
 <div class="grid-container" #container>
     <div class="logo-area" #logoArea>
         <a routerLink="/"><img (click)='linksToggle()' class="logo" src="../../assets/img/logo.svg" alt="Logo"></a>
