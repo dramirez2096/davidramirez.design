@@ -15,6 +15,7 @@ export class NavComponent {
   constructor(){}
 
   ngOnInit(){}
+  
 
     menuToggle(){
       let background = this.nav.nativeElement;
@@ -35,5 +36,16 @@ export class NavComponent {
         linksArea.style.visibility = "hidden"
         linksArea.style.opacity = "0"
       }
+      }
+      linksToggle(){
+        let background = this.nav.nativeElement;
+        let logoArea = this.logo.nativeElement;
+        let linksArea = this.links.nativeElement;
+
+        background.style.height = "0vh"
+        logoArea.style.visibility = "hidden"
+        logoArea.style.opacity = "0"
+        linksArea.style.visibility = "hidden"
+        linksArea.style.opacity = "0"
       }
     }
