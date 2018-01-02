@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { HamburgerComponent } from '../hamburger/hamburger.component';
 
 @Component({
   selector: 'app-nav',
@@ -11,10 +10,33 @@ export class NavComponent {
   @ViewChild('container') nav;
   @ViewChild('logoArea') logo;
   @ViewChild('linksArea') links;
+  @ViewChild('hamburger') hamburger;
 
   constructor(){}
 
-  ngOnInit(){}
+  ngOnInit(){
+    (function() {
+
+      "use strict";
+      
+      var toggles = document.querySelectorAll(".c-hamburger");
+      
+      for (var i = toggles.length - 1; i >= 0; i--) { 
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+      };
+      
+      function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+      }
+      
+      })();
+  }
+  
+  
 
     menuToggle(){
       let background = this.nav.nativeElement;
@@ -35,5 +57,22 @@ export class NavComponent {
         linksArea.style.visibility = "hidden"
         linksArea.style.opacity = "0"
       }
+      }
+
+      linksToggle(){
+        let background = this.nav.nativeElement;
+        let logoArea = this.logo.nativeElement;
+        let linksArea = this.links.nativeElement;
+        let hm = this.hamburger.nativeElement;
+
+        background.style.height = "0vh"
+        logoArea.style.visibility = "hidden"
+        logoArea.style.opacity = "0"
+        linksArea.style.visibility = "hidden"
+        linksArea.style.opacity = "0"
+
+        hm.classList.remove("is-active")
+
+        
       }
     }

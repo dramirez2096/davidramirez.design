@@ -1,14 +1,16 @@
 .grid-container{
     width: 100vw;
     height: 100vh;
+    /* border: 1px dashed salmon; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    ". landing landing landing landing landing .";
+    ". item item item item item .";
 }
-app-landing{
-    grid-area: landing;
+.routed-item{
+    grid-area: item;
 }
+
 h1 {
     display: block;
     font-size: 2em;
