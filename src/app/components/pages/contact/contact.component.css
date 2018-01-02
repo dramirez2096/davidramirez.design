@@ -12,11 +12,12 @@
 } */
 .contact-grid{
     display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .contact-icon-wrap{
   width: 130px;
+  margin: 20px;
 }
 .contact-icon{
   height: 130px;
