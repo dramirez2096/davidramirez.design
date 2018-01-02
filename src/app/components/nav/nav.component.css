@@ -153,4 +153,32 @@
   .c-hamburger--htx.is-active span::before,
   .c-hamburger--htx.is-active span::after {
     transition-delay: 0s, 0.3s
+  } 
+  @media only screen and (max-width: 600px) {
+    .grid-container {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "logo logo logo logo logo logo logo "
+      "links links links links links links links"
+      "links links links links links links links"
+    }
+    .logo-area{
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .links-area{
+      justify-content: center;
+    }
+    .logo{
+      width: 150px;
+      height: 150px;
+    }
+    .name{
+      font-size: 30pt;
+      font-weight: 500;
+      margin-bottom: 23px;
+    }
+    .links{
+      font-size: 30pt;
+    }
   }
