@@ -11,6 +11,7 @@ export class NavComponent {
   @ViewChild('logoArea') logo;
   @ViewChild('linksArea') links;
   @ViewChild('hamburger') hamburger;
+  @ViewChild('socialArea') social;
 
   constructor(){}
 
@@ -42,6 +43,7 @@ export class NavComponent {
       let background = this.nav.nativeElement;
       let logoArea = this.logo.nativeElement;
       let linksArea = this.links.nativeElement;
+      let socialArea = this.social.nativeElement;
 
       if(background.style.height != '100vh'){
         background.style.height = "100vh"
@@ -49,6 +51,8 @@ export class NavComponent {
         logoArea.style.opacity = "1"
         linksArea.style.visibility = "visible"
         linksArea.style.opacity = "1"
+        socialArea.style.visibility = "visible"
+        socialArea.style.opacity = "1"
       }
       else {
         background.style.height = "0vh"
@@ -56,6 +60,8 @@ export class NavComponent {
         logoArea.style.opacity = "0"
         linksArea.style.visibility = "hidden"
         linksArea.style.opacity = "0"
+        socialArea.style.visibility = "hidden"
+        socialArea.style.opacity = "0"
       }
       }
 
@@ -64,12 +70,15 @@ export class NavComponent {
         let logoArea = this.logo.nativeElement;
         let linksArea = this.links.nativeElement;
         let hm = this.hamburger.nativeElement;
+        let socialArea = this.social.nativeElement;
 
         background.style.height = "0vh"
         logoArea.style.visibility = "hidden"
         logoArea.style.opacity = "0"
         linksArea.style.visibility = "hidden"
         linksArea.style.opacity = "0"
+        socialArea.style.visibility = "hidden"
+        socialArea.style.opacity = "0"
 
         hm.classList.remove("is-active")
 
