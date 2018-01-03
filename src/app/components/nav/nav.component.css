@@ -207,13 +207,31 @@
   .c-hamburger--htx.is-active span::after {
     transition-delay: 0s, 0.3s
   } 
+  @media only screen and (max-width: 1100px){
+    .grid-container {
+      grid-template-rows: 1fr 1fr 1fr 1fr ;
+      grid-template-areas: 
+      "logo logo logo links links links links "
+      "logo logo logo links links links links"
+      "logo logo logo links links links links"
+      "social social social social social social social  "
+    }
+    .social-area{
+      justify-content: center;
+    }
+    .social-links li{
+      display: inline;
+      margin-right: 40px;
+    }
+  }
   @media only screen and (max-width: 600px) {
     .grid-container {
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: 
       "logo logo logo logo logo logo logo "
       "links links links links links links links"
       "links links links links links links links"
+      "social social social social social social social  "
     }
     .logo-area{
       flex-direction: row;
@@ -233,5 +251,10 @@
     }
     .links{
       font-size: 30pt;
+    }
+    .social-links li{
+      display: block;
+      margin-right: 0px;
+      font-size: 15pt;
     }
   }
