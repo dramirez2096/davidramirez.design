@@ -58,8 +58,10 @@
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
 }
-.links li a::after{
+/* .links li a::after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -69,9 +71,12 @@
   transform: scaleX(0);
   background-color: #0477BD;
   transition: all 0.2s ease-out;
-}
+} */
 .links li a:hover:after{
   transform: scaleX(1);
+}
+.links li a:hover{
+  opacity: 1;
 }
 
 /* Hamburger Menu Styles */
