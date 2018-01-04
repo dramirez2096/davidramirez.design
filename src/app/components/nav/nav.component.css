@@ -114,18 +114,6 @@
 .social-links li a:hover{
   opacity: 1;
 }
-.social-links>.twitter a:hover{
-  color: #2AA3EF;
-  transition: color 0.2s ease-out;
-}
-.social-links>.facebook a:hover{
-  color: #3C5A96;
-  transition: color 0.2s ease-out;
-}
-.social-links>.instagram a:hover{
-  color: #A61B94;
-  transition: color 0.2s ease-out;
-}
 
 /* Hamburger Menu Styles */
 .c-hamburger {
