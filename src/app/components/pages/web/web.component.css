@@ -1,0 +1,15 @@
+.work-grid{
+  border: dashed 1px red;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.work-grid-item{
+  width: 295px;
+  height: 295px;
+  border: solid #0477BD;
+  background-color: #1E1E1E;
+}
