@@ -8,12 +8,14 @@ import { NavComponent } from './components/nav/nav.component';
 import { LandingComponent } from './components/pages/landing/landing.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { WebDesignComponent } from './components/pages/web/web.component';
 
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'web-design', component: WebDesignComponent }
 ];
 
 @NgModule({
@@ -23,6 +25,7 @@ const routes: Routes = [
     LandingComponent,
     AboutComponent,
     ContactComponent,
+    WebDesignComponent,
   ],
   imports: [
     BrowserModule,

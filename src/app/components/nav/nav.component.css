@@ -221,12 +221,12 @@
       "links links links links links links links"
       "social social social social social social social  "
     }
-    .logo-area{
+    .logo-area{ 
       flex-direction: row;
       align-items: flex-end;
       margin-top: 35px;
     }
-    .links-area{
+    .links-area{ 
       justify-content: center;
     }
     .logo{
