@@ -10,6 +10,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { WebDesignComponent } from './components/pages/web/web.component';
 import { GraphicDesignComponent } from './components/pages/graphic/graphic.component';
+import { IrisComponent } from './components/pages/graphic/items/iris/iris.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'web-design', component: WebDesignComponent },
-  { path: 'graphic-design', component: GraphicDesignComponent }
+  { path: 'graphic-design', component: GraphicDesignComponent },
+  { path: "iris", component: IrisComponent }
 ];
 
 @NgModule({
@@ -29,6 +31,7 @@ const routes: Routes = [
     ContactComponent,
     WebDesignComponent,
     GraphicDesignComponent,
+    IrisComponent,
   ],
   imports: [
     BrowserModule,
