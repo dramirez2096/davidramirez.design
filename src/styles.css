@@ -106,3 +106,23 @@ h1{
       transform: translateY(-150vh) rotate(630deg);
     }
   }
+
+  .design-page{
+    /* border: 1px dashed red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "pic pic info"
+}
+.info{
+    grid-area: info;
+    /* border: 1px dashed yellow; */
+}
+.pictures{
+    grid-area: pic;
+    /* border: 1px dashed lightgreen; */
+    padding: 10px;
+}
+.pictures img{
+    max-width: 100%;
+
+}

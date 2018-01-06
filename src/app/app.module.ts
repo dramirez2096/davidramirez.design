@@ -10,7 +10,9 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { WebDesignComponent } from './components/pages/web/web.component';
 import { GraphicDesignComponent } from './components/pages/graphic/graphic.component';
+
 import { IrisComponent } from './components/pages/graphic/items/iris/iris.component';
+import { DaycareComponent } from './components/pages/graphic/items/daycare/daycare.component';
 
 
 const routes: Routes = [
@@ -19,7 +21,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'web-design', component: WebDesignComponent },
   { path: 'graphic-design', component: GraphicDesignComponent },
-  { path: "iris", component: IrisComponent }
+  { path: "iris", component: IrisComponent },
+  { path: "ramirez-daycare", component: DaycareComponent }
 ];
 
 @NgModule({
@@ -32,6 +35,7 @@ const routes: Routes = [
     WebDesignComponent,
     GraphicDesignComponent,
     IrisComponent,
+    DaycareComponent
   ],
   imports: [
     BrowserModule,
