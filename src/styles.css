@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     font-family: 'Brandon Grotesque';
+    background-image: url(assets/img/background-3.png);
     background-color: #0477BD;
     color: #fff;
     margin: 0px;
