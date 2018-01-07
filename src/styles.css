@@ -126,3 +126,13 @@ h1{
     max-width: 100%;
 
 }
+@media only screen and (max-width: 1000px){
+  .design-page{
+    grid-auto-rows: 30% 70% ;
+    grid-template-areas: 
+    "info info info"
+    "pic pic pic"
+    /* "pic pic pic"
+    "pic pic pic" */
+  }
+}
