@@ -13,6 +13,7 @@ import { GraphicDesignComponent } from './components/pages/graphic/graphic.compo
 
 import { IrisComponent } from './components/pages/graphic/items/iris/iris.component';
 import { DaycareComponent } from './components/pages/graphic/items/daycare/daycare.component';
+import { RosalesComponent } from './components/pages/graphic/items/rosales/rosales.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'web-design', component: WebDesignComponent },
   { path: 'graphic-design', component: GraphicDesignComponent },
   { path: "iris", component: IrisComponent },
-  { path: "ramirez-daycare", component: DaycareComponent }
+  { path: "ramirez-daycare", component: DaycareComponent },
+  { path: "rosales-winery", component: RosalesComponent }
 ];
 
 @NgModule({
@@ -35,7 +37,8 @@ const routes: Routes = [
     WebDesignComponent,
     GraphicDesignComponent,
     IrisComponent,
-    DaycareComponent
+    DaycareComponent,
+    RosalesComponent
   ],
   imports: [
     BrowserModule,
