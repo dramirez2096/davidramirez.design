@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     font-family: 'Brandon Grotesque';
+    background-image: url(assets/img/background-3.png);
+    background-size: 100%;
+    background-attachment: fixed;
     background-color: #0477BD;
     color: #fff;
     margin: 0px;
@@ -106,3 +109,33 @@ h1{
       transform: translateY(-150vh) rotate(630deg);
     }
   }
+
+  .design-page{
+    /* border: 1px dashed red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "pic pic info"
+}
+.info{
+    grid-area: info;
+    /* border: 1px dashed yellow; */
+}
+.pictures{
+    grid-area: pic;
+    /* border: 1px dashed lightgreen; */
+    padding: 10px;
+}
+.pictures img{
+    max-width: 100%;
+
+}
+@media only screen and (max-width: 1000px){
+  .design-page{
+    grid-auto-rows: 30% 70% ;
+    grid-template-areas: 
+    "info info info"
+    "pic pic pic"
+    /* "pic pic pic"
+    "pic pic pic" */
+  }
+}

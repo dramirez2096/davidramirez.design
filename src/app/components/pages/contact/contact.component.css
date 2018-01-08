@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 .contact-icon-wrap{
   width: 130px;
