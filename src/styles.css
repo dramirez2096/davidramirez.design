@@ -2,6 +2,8 @@
 body{
     font-family: 'Brandon Grotesque';
     background-image: url(assets/img/background-3.png);
+    background-size: 100%;
+    background-attachment: fixed;
     background-color: #0477BD;
     color: #fff;
     margin: 0px;
