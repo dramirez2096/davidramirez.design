@@ -18,6 +18,9 @@ body{
 }
 .page-title{
     font-size: 63px;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     display: inline;
     font-weight: 700;
     text-shadow: 5px 5px 1px #045D89;
