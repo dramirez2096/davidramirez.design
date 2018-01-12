@@ -6,12 +6,12 @@
 	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
 }
 .contact-grid{
+    border: 1px dashed salmon;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 100px;
 }
-.contact-icon-wrap{
+.contact-icon-wrap{ 
   width: 130px;
   margin: 20px;
 }
@@ -43,4 +43,18 @@
 }
 .contact-icon:hover .contact-fa{
   color: #0477BD;
+}
+.resume-container{
+  border: 1px dashed yellow;
+  display: flex;
+  justify-content: center;
+}
+.resume{
+  width: 300px;
+  height: 388px;
+  background-color: #1E1E1E;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
