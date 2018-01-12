@@ -17,7 +17,7 @@
   }
   .im{
     opacity: 0;
-    animation-name: fade;
+    animation-name: fade; 
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 2s;
