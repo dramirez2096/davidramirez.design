@@ -57,9 +57,9 @@
   height: 389px;
   background-color: #1E1E1E;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .resume img{
   position: relative;
@@ -71,8 +71,9 @@
   opacity: 0.1;
 }
 .resume-fa{
-  position: absolute;
+  position: relative;
   opacity: 0;
+  top: -230px;
   transition: all 0.2s linear;
 }
 .resume:hover .resume-fa{
