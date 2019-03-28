@@ -14,6 +14,9 @@ import { GraphicDesignComponent } from './components/pages/graphic/graphic.compo
 import { IrisComponent } from './components/pages/graphic/items/iris/iris.component';
 import { DaycareComponent } from './components/pages/graphic/items/daycare/daycare.component';
 import { RosalesComponent } from './components/pages/graphic/items/rosales/rosales.component';
+import { PulitoComponent } from './components/pages/graphic/items/pulito/pulito.component';
+import { Shift3Component } from './components/pages/graphic/items/shift3/shift3.component';
+import { ArComponent } from './components/pages/graphic/items/ar/ar.component';
 
 
 const routes: Routes = [
@@ -24,7 +27,10 @@ const routes: Routes = [
   { path: 'graphic-design', component: GraphicDesignComponent },
   { path: "iris", component: IrisComponent },
   { path: "ramirez-daycare", component: DaycareComponent },
-  { path: "rosales-winery", component: RosalesComponent }
+  { path: "rosales-winery", component: RosalesComponent },
+  { path: "pulito", component: PulitoComponent },
+  { path: "shift3", component: Shift3Component },
+  { path: "ar", component: ArComponent }
 ];
 
 @NgModule({
@@ -38,7 +44,10 @@ const routes: Routes = [
     GraphicDesignComponent,
     IrisComponent,
     DaycareComponent,
-    RosalesComponent
+    RosalesComponent,
+    PulitoComponent,
+    Shift3Component,
+    ArComponent
   ],
   imports: [
     BrowserModule,
